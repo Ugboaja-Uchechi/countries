@@ -1,4 +1,4 @@
-// import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 // import { uuid } from "uuid"
@@ -24,9 +24,9 @@ const Home = ({ countries }) => {
 
       <main>
         {countries.map(country => (
-            <div key={country.id}>
-              <Image src={country.flags.svg} alt="A country flag" width={128} height={77} />
+            <Link href= {'/country/' + country.cca3} key={country.cca3}>
               <div>
+              <Image src={country.flags.svg} alt="A country flag" width={128} height={77} />
                 <div>
                   <h2>{country.name.official}</h2>
                 </div>
@@ -43,7 +43,7 @@ const Home = ({ countries }) => {
                   <p>{country.capital}</p>
                 </div>
               </div>
-            </div>
+            </Link>
             // {console.log(country.population)}
           ))}
       </main>
