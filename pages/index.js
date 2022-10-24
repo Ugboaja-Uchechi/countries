@@ -1,16 +1,23 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import axios from 'axios';
 // import { uuid } from "uuid"
 
 export const getStaticProps = async () => {
-  const res = await fetch("https://restcountries.com/v3.1/all");
-  const data = await res.json();
-
+  const { data } = await axios.get("https://restcountries.com/v3.1/all");
+  const sortedData = data.sort((a, b) => {
+    if (a.name.common < b.name.common) {
+      return -1;
+    } else if (a.name.common > b.name.common) {
+      return 1;
+    }
+    return 0;
+  });
   return {
-    props: { countries: data }
-  }
-}
+    props: { countries: sortedData },
+  };
+};
 
 const Home = ({ countries }) => {
   console.log(countries)
@@ -24,11 +31,11 @@ const Home = ({ countries }) => {
 
       <main>
         {countries.map(country => (
-            <Link href= {'/country/' + country.cca3} key={country.cca3}>
+            <Link href= {'/country/' + country.name.common.toLowerCase()} key={country.name.common}>
               <div>
               <Image src={country.flags.svg} alt="A country flag" width={128} height={77} />
                 <div>
-                  <h2>{country.name.official}</h2>
+                  <h2>{country.name.common}</h2>
                 </div>
                 <div>
                   <h2>Population</h2>
