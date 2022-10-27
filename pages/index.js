@@ -60,56 +60,55 @@ const Home = ({ countries }) => {
         <div>
           <select name='filter' onChange={(e) => setDropDown(e.target.value)}>
             {continentFilters.map((filter) => {
-                return (
-                  <option key={filter.name} value={filter.value}>
-                    {filter.name}
-                  </option>
-                )
-              }
+              return (
+                <option key={filter.name} value={filter.value}>
+                  {filter.name}
+                </option>
+              )
+            }
             )}
           </select>
         </div>
         {countries.filter((country) => {
-          if (searchBar &&country.name.common.toLowerCase().includes(searchBar.toLowerCase()))
-            {
-              if (dropDown && dropDown == country.region) {
-                return country;
-              } else if (dropDown && dropDown != country.region) {
-                return;
-              }
+          if (searchBar && country.name.common.toLowerCase().includes(searchBar.toLowerCase())) {
+            if (dropDown && dropDown == country.region) {
               return country;
-            } else if (!searchBar && dropDown && dropDown == country.region) {
-                return country;
-            } else if (!searchBar && !dropDown) {
-                return country;
+            } else if (dropDown && dropDown != country.region) {
+              return;
             }
-          })
+            return country;
+          } else if (!searchBar && dropDown && dropDown == country.region) {
+            return country;
+          } else if (!searchBar && !dropDown) {
+            return country;
+          }
+        })
           .map((country) => {
 
-        return(
-            <Link href= {'/country/' + country.name.common.toLowerCase()} key={country.name.common}>
-              <div>
-              <Image src={country.flags.svg} alt="A country flag" width={128} height={77} />
+            return (
+              <Link href={'/country/' + country.name.common.toLowerCase()} key={country.name.common}>
                 <div>
-                  <h2>{country.name.common}</h2>
+                  <Image src={country.flags.svg} alt="A country flag" width={128} height={77} />
+                  <div>
+                    <h2>{country.name.common}</h2>
+                  </div>
+                  <div>
+                    <h2>Population</h2>
+                    <p>{country.population}</p>
+                  </div>
+                  <div>
+                    <h2>Region</h2>
+                    <p>{country.region}</p>
+                  </div>
+                  <div>
+                    <h2>Capital</h2>
+                    <p>{country.capital}</p>
+                  </div>
                 </div>
-                <div>
-                  <h2>Population</h2>
-                  <p>{country.population}</p>
-                </div>
-                <div>
-                  <h2>Region</h2>
-                  <p>{country.region}</p>
-                </div>
-                <div>
-                  <h2>Capital</h2>
-                  <p>{country.capital}</p>
-                </div>
-              </div>
-            </Link>
-            // {console.log(country.population)}
-        );
-        })}
+              </Link>
+              // {console.log(country.population)}
+            );
+          })}
       </main>
     </div>
   );
