@@ -4,6 +4,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import axios from 'axios';
 import { useState } from 'react';
+import AiOutlineSearch from "@heroicons/react/ai"
 // import { uuid } from "uuid"
 
 export const getStaticProps = async () => {
@@ -46,15 +47,16 @@ const Home = ({ countries }) => {
     },
   ]
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Where in the world</title>
         <meta name="description" content="REST Countries API challenge provided by FrontEnd Mentor. Solution by Stephanie" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <div className={styles.searchCover }>
         <div>
+         <AiOutlineSearch />
           <input type='search' name='search' placeholder='Find a country...' onChange={(e) => setSearchBar(e.target.value)} />
         </div>
         <div>
@@ -69,6 +71,9 @@ const Home = ({ countries }) => {
             )}
           </select>
         </div>
+      </div>
+
+      <main className={styles.container}>
         {countries.filter((country) => {
           if (searchBar && country.name.common.toLowerCase().includes(searchBar.toLowerCase())) {
             if (dropDown && dropDown == country.region) {
@@ -87,22 +92,26 @@ const Home = ({ countries }) => {
 
             return (
               <Link href={'/country/' + country.name.common.toLowerCase()} key={country.name.common}>
-                <div>
-                  <Image src={country.flags.svg} alt="A country flag" width={128} height={77} />
-                  <div>
-                    <h2>{country.name.common}</h2>
+                <div className={styles.cover}>
+                  <div className={styles.imgwrapper}>
+                    <Image src={country.flags.svg} alt={`${country.name.common} Flag`} layout="fill" />
                   </div>
-                  <div>
-                    <h2>Population</h2>
-                    <p>{country.population}</p>
-                  </div>
-                  <div>
-                    <h2>Region</h2>
-                    <p>{country.region}</p>
-                  </div>
-                  <div>
-                    <h2>Capital</h2>
-                    <p>{country.capital}</p>
+                  <div className={styles.textCover}>
+                    <div className={styles.margin}>
+                      <h2 className={styles.mainText}>{country.name.common}</h2>
+                    </div>
+                    <div className={styles.textFlex}>
+                      <h2 className={styles.text}>Population:</h2>
+                      <p>{country.population}</p>
+                    </div>
+                    <div className={styles.textFlex}>
+                      <h2 className={styles.text}>Region:</h2>
+                      <p>{country.region}</p>
+                    </div>
+                    <div className={styles.textFlex}>
+                      <h2 className={styles.text}>Capital:</h2>
+                      <p>{country.capital}</p>
+                    </div>
                   </div>
                 </div>
               </Link>
