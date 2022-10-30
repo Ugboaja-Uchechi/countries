@@ -4,7 +4,6 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import axios from 'axios';
 import { useState } from 'react';
-import AiOutlineSearch from "@heroicons/react/ai"
 // import { uuid } from "uuid"
 
 export const getStaticProps = async () => {
@@ -56,14 +55,13 @@ const Home = ({ countries }) => {
 
       <div className={styles.searchCover }>
         <div>
-         <AiOutlineSearch />
-          <input type='search' name='search' placeholder='Find a country...' onChange={(e) => setSearchBar(e.target.value)} />
+          <input type='search' name='search' placeholder='Find a country...' onChange={(e) => setSearchBar(e.target.value)} className={styles.input} />
         </div>
         <div>
-          <select name='filter' onChange={(e) => setDropDown(e.target.value)}>
+          <select name='filter' onChange={(e) => setDropDown(e.target.value)} className={styles.dropdown}>
             {continentFilters.map((filter) => {
               return (
-                <option key={filter.name} value={filter.value}>
+                <option key={filter.name} value={filter.value} className={styles.option}>
                   {filter.name}
                 </option>
               )

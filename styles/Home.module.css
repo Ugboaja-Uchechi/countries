@@ -3,8 +3,31 @@
   align-items: center;
   width: 95%;
   justify-content: space-between;
-  margin: 0 auto;
+  margin: 2.5rem auto;
 }
+
+.input {
+  border-radius: 5px;
+  padding: 0.8rem;
+  /* width: 18rem; */
+  width: calc(180% - 20px);
+  box-shadow: 10px 7px 20px 0px #0000000a;
+  border: 1px solid transparent;
+  font-weight: 600;
+  outline: none;
+  /* margin: 2.5rem 0; */
+}
+
+.dropdown {
+  padding: 0.8rem;
+  box-shadow: 10px 7px 20px 0px #0000000a;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: 600;
+  outline: none;
+  letter-spacing: 1px;
+}
+
 
 .container {
   display: grid;
