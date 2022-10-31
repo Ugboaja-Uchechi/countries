@@ -43,7 +43,8 @@
   background-color: #fff;
   height: 22rem;
   border-radius: 5px;
-  box-shadow: 10px 10px 20px 0px #0000000a;;
+  box-shadow: 10px 10px 20px 0px #0000000a;
+  cursor: pointer;
   /* margin-left: auto; */
 }
 

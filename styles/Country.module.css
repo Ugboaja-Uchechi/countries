@@ -1,0 +1,81 @@
+.btnCover {
+  margin-left: 2rem;
+  margin-block: 2.5rem;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: #111517;
+  border: 1px solid transparent;
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 10px 7px 20px 0px #0000000a;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+
+.imgCover {
+  position: relative;
+  height: 20rem;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.heading {
+  font-size: 1.5rem;
+}
+
+.subHeadingCover {
+  display: flex;
+  align-items: center;
+  margin-block-start: 0.5rem;
+}
+
+.mLeft {
+  margin-inline-start: 3rem;
+}
+
+.subHeading {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.text {
+  padding-inline-start: 0.5rem;
+}
+
+.borderCover {
+  display: flex;
+  align-items: center;
+  margin-block-start: 1rem;
+  flex-wrap: wrap;
+}
+
+.flexCover {
+  display: flex;
+  /* align-items: center;
+  justify-content: space-between; */
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.button {
+  padding: 0.4rem 1rem;
+  border: 1px solid #fafafa;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-inline-start: 0.5rem;
+  margin-block-start: 0.5rem;
+  color: #111517;
+  font-family: 'Nunito Sans', sans-serif;
+  box-shadow: 10px 7px 20px 0px #0000000a;
+  cursor: pointer;
+}
