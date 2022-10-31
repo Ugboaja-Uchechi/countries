@@ -6,9 +6,9 @@
 
 .link {
   text-decoration: none;
-  color: #111517;
   border: 1px solid transparent;
-  background-color: #fff;
+  background-color: var(--primary);
+  color: var(--text);
   font-size: 1rem;
   padding: 0.5rem 2.5rem;
   border-radius: 5px;
@@ -69,12 +69,13 @@
 
 .button {
   padding: 0.4rem 1rem;
-  border: 1px solid #fafafa;
-  background-color: #fff;
+  border: 1px solid var(--primary-alt);
+  background-color: var(--primary);
+  color: var(--text);
   border-radius: 5px;
   margin-inline-start: 0.5rem;
   margin-block-start: 0.5rem;
-  color: #111517;
+  /* color: #111517; */
   font-family: 'Nunito Sans', sans-serif;
   box-shadow: 10px 7px 20px 0px #0000000a;
   cursor: pointer;

@@ -15,18 +15,26 @@
   border: 1px solid transparent;
   font-weight: 600;
   outline: none;
+  background-color: var(--primary);
+  color: var(--text);
   /* margin: 2.5rem 0; */
+}
+
+.input::placeholder {
+  color: var(--text);
 }
 
 .dropdown {
   padding: 0.8rem;
   box-shadow: 10px 7px 20px 0px #0000000a;
+  background-color: var(--primary);
   border: 1px solid transparent;
   border-radius: 5px;
   font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   outline: none;
   letter-spacing: 1px;
+  color: var(--text);
 }
 
 
@@ -41,7 +49,8 @@
   /* position: relative; */
   /* display: block; */
   width: 80%;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--primary);
   height: 22rem;
   border-radius: 5px;
   box-shadow: 10px 10px 20px 0px #0000000a;

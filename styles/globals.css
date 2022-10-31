@@ -1,14 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
 
+:root {
+  --background: hsl(0, 0%, 98%);
+  --primary: hsl(0, 0%, 100%);
+  --primary-alt: hsl(0, 0%, 90%);
+  --text: hsl(200, 15%, 8%);
+}
+
+[data-theme="dark"] {
+  --background: hsl(207, 26%, 17%);
+  --primary: hsl(209, 23%, 22%);
+  --primary-alt: hsl(209, 23%, 30%);
+  --text: hsl(0, 0%, 100%);
+}
+
+
+/* :root {
+  --lightModeText: #111517;
+  --lightModeBackground: #fafafa;
+  --White: #fff;
+  --darkModeBackground: hsl(209, 26%, 17%);
+  --coverDarkModeBackground: hsl(209, 23%, 22%);
+} */
+
 body {
-  color: #111517;
-  background-color: #fafafa;
+  color: var(--text);
+  background-color: var(--background);
   font-family: 'Nunito Sans', sans-serif;
   height: 100vh;
 }
+
+/* body[data-theme="dark"] {
+  color: var(--White);
+  background-color: var(--darkModeBackground);
+} */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
+/* body.cover[data-theme="light"] {
+  background-color: var(--White);
+}
+
+body[data-theme="dark"].cover {
+  background-color: var(--coverDarkModeBackground);
+}
+
+body.header[data-theme="light"] {
+  background-color: var(--White);
+}
+
+body[data-theme="dark"].header {
+  background-color: var(--coverDarkModeBackground);
+} */
+
