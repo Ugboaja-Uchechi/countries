@@ -23,6 +23,7 @@
   box-shadow: 10px 7px 20px 0px #0000000a;
   border: 1px solid transparent;
   border-radius: 5px;
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 600;
   outline: none;
   letter-spacing: 1px;
@@ -76,4 +77,20 @@
   letter-spacing: 1px;
   font-size: 1rem;
   /* padding-block-start: 0.5rem; */
+}
+
+@media screen and (max-width: 630px) {
+
+  .input {
+    width: 18rem;
+  }
+
+  .searchCover {
+    display: block;
+  }
+
+  .dropdown {
+    margin-block-start: 1rem;
+  }
+  
 }
