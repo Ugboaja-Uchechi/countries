@@ -33,3 +33,24 @@ Light Mode(Details Page) | Dark Mode(Details Page)
 - Flexbox
 - CSS Grid
 - [Next.js](https://nextjs.org/) - React framework
+
+### Author
+Ugboaja Uchechi
+
+- GitHub: [GitHub](https://github.com/Ugboaja-Uchechi)
+
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/stephanie-ugboaja/)
+
+- Portfolio: [Website](https://tired-coder.vercel.app/)
+
+### 🤝 Contributing
+
+Contributions, issues, and feature requests are always welcome!
+
+### Show your support
+
+Give a ⭐️ if you like this project!
+
+### Acknowledgment(s)
+
+- Frontend Mentor
