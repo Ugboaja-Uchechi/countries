@@ -3,7 +3,8 @@
   align-items: center;
   width: 95%;
   justify-content: space-between;
-  margin: 2.5rem auto;
+  margin: 7.5rem auto;
+  margin-block-end: 2.5rem;
 }
 
 .input {
