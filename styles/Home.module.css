@@ -9,7 +9,6 @@
 .input {
   border-radius: 5px;
   padding: 0.8rem;
-  /* width: 18rem; */
   width: calc(180% - 20px);
   box-shadow: 10px 7px 20px 0px #0000000a;
   border: 1px solid transparent;
@@ -17,7 +16,6 @@
   outline: none;
   background-color: var(--primary);
   color: var(--text);
-  /* margin: 2.5rem 0; */
 }
 
 .input::placeholder {
@@ -46,16 +44,12 @@
 }
 
 .cover {
-  /* position: relative; */
-  /* display: block; */
   width: 80%;
-  /* background-color: #fff; */
   background-color: var(--primary);
   height: 22rem;
   border-radius: 5px;
   box-shadow: 10px 10px 20px 0px #0000000a;
   cursor: pointer;
-  /* margin-left: auto; */
 }
 
 .imgwrapper {
@@ -74,7 +68,6 @@
   display: flex;
   align-items: center;
   margin-block-start: 0.2rem;
-  /* justify-content: space-evenly; */
 }
 
 .mainText {
@@ -85,7 +78,6 @@
   padding-inline-end: 0.5rem;
   letter-spacing: 1px;
   font-size: 1rem;
-  /* padding-block-start: 0.5rem; */
 }
 
 @media screen and (max-width: 630px) {

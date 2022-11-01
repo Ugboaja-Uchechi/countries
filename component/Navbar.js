@@ -22,7 +22,6 @@ const Navbar = () => {
           ) : (
             <p className={styles.paragraph}><BsFillSunFill /> Light Mode</p>
           )}
-          {/* <p className={styles.paragraph}>🌙 Dark Mode</p> */}
         </div>
       </nav>
     </header>

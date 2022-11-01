@@ -14,15 +14,6 @@
   --text: hsl(0, 0%, 100%);
 }
 
-
-/* :root {
-  --lightModeText: #111517;
-  --lightModeBackground: #fafafa;
-  --White: #fff;
-  --darkModeBackground: hsl(209, 26%, 17%);
-  --coverDarkModeBackground: hsl(209, 23%, 22%);
-} */
-
 body {
   color: var(--text);
   background-color: var(--background);
@@ -30,30 +21,8 @@ body {
   height: 100vh;
 }
 
-/* body[data-theme="dark"] {
-  color: var(--White);
-  background-color: var(--darkModeBackground);
-} */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-/* body.cover[data-theme="light"] {
-  background-color: var(--White);
-}
-
-body[data-theme="dark"].cover {
-  background-color: var(--coverDarkModeBackground);
-}
-
-body.header[data-theme="light"] {
-  background-color: var(--White);
-}
-
-body[data-theme="dark"].header {
-  background-color: var(--coverDarkModeBackground);
-} */
-

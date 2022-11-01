@@ -61,8 +61,6 @@
 
 .flexCover {
   display: flex;
-  /* align-items: center;
-  justify-content: space-between; */
   flex-wrap: wrap;
   margin: 1rem 0;
 }
@@ -75,7 +73,6 @@
   border-radius: 5px;
   margin-inline-start: 0.5rem;
   margin-block-start: 0.5rem;
-  /* color: #111517; */
   font-family: 'Nunito Sans', sans-serif;
   box-shadow: 10px 7px 20px 0px #0000000a;
   cursor: pointer;
