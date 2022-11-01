@@ -1,11 +1,11 @@
 import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
+import Head from "next/head";
 import styles from "../../styles/Country.module.css";
 
 export const getStaticPaths = async () => {
   const { data } = await axios.get("https://restcountries.com/v3.1/all");
-  // const data = await res.json();
 
   const paths = data.map((item) => {
     return {
@@ -58,6 +58,11 @@ const Details = ({ country, countries }) => {
   const languages = country.languages ? Object.values(country.languages) : [];
   return (
     <main>
+      <Head>
+        <title>Where in the world</title>
+        <meta name="description" content="REST Countries API challenge provided by FrontEnd Mentor. Solution by Stephanie" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.btnCover}>
         <Link href='/'>
           <button className={styles.link}>Back</button>
