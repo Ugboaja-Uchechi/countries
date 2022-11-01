@@ -1,0 +1,18 @@
+.header {
+  box-shadow: 3px 0px 20px 0px #0000000A;
+  padding-block: 1.5rem;
+  background-color: var(--primary);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.paragraph {
+  font-weight: 600;
+  cursor: pointer;
+}
