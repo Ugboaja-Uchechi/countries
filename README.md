@@ -2,7 +2,7 @@
 
 This is my solution to the [Frontend Mentor REST Countires API challenge](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca)
 
-### The challenge
+## The challenge
 
 The challenge is integrating with the [REST Countries API](https://restcountries.com/) to pull country data
 
@@ -15,7 +15,11 @@ Users should be able to:
 - Click through to the border countries on the detail page.
 - Toggle the color scheme between light and dark mode.
 
-### Screenshots
+## Live Link
+
+[Live Link](https://allcountry.vercel.app/)
+
+## Screenshots
 
 Light Mode | Dark Mode
 ------------- | -------------
@@ -26,7 +30,7 @@ Light Mode(Details Page) | Dark Mode(Details Page)
 ![image](https://user-images.githubusercontent.com/74814780/199296430-8cab9f63-f1f0-44c2-a150-0c5ffbe0fab8.png)  |  ![image](https://user-images.githubusercontent.com/74814780/199296329-cd3404f9-1b23-49b2-8d48-6f6836a78314.png)
 
 
-### Built with
+## Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -34,7 +38,7 @@ Light Mode(Details Page) | Dark Mode(Details Page)
 - CSS Grid
 - [Next.js](https://nextjs.org/) - React framework
 
-### Author
+## Author
 Ugboaja Uchechi
 
 - GitHub: [GitHub](https://github.com/Ugboaja-Uchechi)
@@ -43,7 +47,7 @@ Ugboaja Uchechi
 
 - Portfolio: [Website](https://tired-coder.vercel.app/)
 
-### 🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are always welcome!
 
@@ -51,6 +55,6 @@ Contributions, issues, and feature requests are always welcome!
 
 Give a ⭐️ if you like this project!
 
-### Acknowledgment(s)
+## Acknowledgment(s)
 
 - Frontend Mentor
